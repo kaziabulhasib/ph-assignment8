@@ -21,6 +21,14 @@ const Book = ({ book }) => {
         <figure className='bg-[#F3F3F3] w-[320px] h-[230px] rounded-2xl mx-auto'>
           <img className='h-[165px]' src={image} alt='Shoes' />
         </figure>
+        <div className='flex gap-3 my-6'>
+          {tags.map((tag, index) => (
+            <p className='text-[#23BE0A]' key={index}>
+              {tag}
+            </p>
+          ))}
+        </div>
+
         <div className='card-body'>
           <h2 className='card-title'>{bookName}</h2>
           <p className='nav-font'>by: {author}</p>
