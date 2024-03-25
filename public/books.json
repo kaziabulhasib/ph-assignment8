@@ -1,0 +1,80 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Dating Playbook for Men",
+        "author": "Andrew Ferebee",
+        "image": "/public/BokImg/Dating.png",
+        "review": "A comprehensive guide to improving one's dating life, offering practical advice and strategies for men.",
+        "totalPages": 250,
+        "rating": 4.5,
+        "category": "Self-help",
+        "tags": ["Relationships", "Dating", "Self-improvement"],
+        "publisher": "Sound Wisdom",
+        "yearOfPublishing": 2015
+    },
+    {
+        "bookId": 2,
+        "bookName": "Why Do You Hate Money",
+        "author": "Peter Kuo",
+        "image": "/public/BokImg/Money.png",
+        "review": "An exploration of personal finance mindset and the psychology behind money management, offering insights into financial success.",
+        "totalPages": 200,
+        "rating": 4.0,
+        "category": "Finance",
+        "tags": ["Personal Finance", "Money Management", "Wealth"],
+        "publisher": "Independently Published",
+        "yearOfPublishing": 2020
+    },
+    {
+        "bookId": 3,
+        "bookName": "The  Hate U Give",
+        "author": "Angie Thomas",
+        "image": "/public/BokImg/TheHate.png",
+        "review": "A gripping novel that delves into the complexities of racial identity, injustice, and activism, through the eyes of a young African American girl.",
+        "totalPages": 450,
+        "rating": 4.8,
+        "category": "Fiction",
+        "tags": ["Social Justice", "Race Relations", "Young Adult"],
+        "publisher": "Balzer + Bray",
+        "yearOfPublishing": 2017
+    },
+    {
+        "bookId": 4,
+        "bookName": "The Scholarship Monthly Planner",
+        "author": "Sarah Johnson",
+        "image": "/public/BokImg/Scholar.png",
+        "review": "A practical organizer designed to help students manage their scholarship applications, deadlines, and requirements effectively.",
+        "totalPages": 150,
+        "rating": 4.2,
+        "category": "Education",
+        "tags": ["Scholarships", "Planner", "Academic Success"],
+        "publisher": "ScholarPlanner Co.",
+        "yearOfPublishing": 2021
+    },
+    {
+        "bookId": 5,
+        "bookName": "Annotated Texas Family Code",
+        "author": "John Doe",
+        "image": "/public/BokImg/TexsFamily.png",
+        "review": "A comprehensive reference guide to the Texas Family Code, featuring annotations and explanations to assist legal professionals and students.",
+        "totalPages": 500,
+        "rating": 4.7,
+        "category": "Law",
+        "tags": ["Legal Reference", "Texas Law", "Family Law"],
+        "publisher": "Legal Publications Inc.",
+        "yearOfPublishing": 2019
+    },
+    {
+        "bookId": 6,
+        "bookName": "Loving Jesus More",
+        "author": "Philip Graham Ryken",
+        "image": "/public/BokImg/LovingJesus.png",
+        "review": "A spiritual exploration of deepening one's love and devotion to Jesus Christ, offering insights and practical guidance for Christian believers.",
+        "totalPages": 300,
+        "rating": 4.6,
+        "category": "Religion",
+        "tags": ["Christianity", "Spirituality", "Devotion"],
+        "publisher": "Crossway",
+        "yearOfPublishing": 2016
+    }
+]

@@ -1,7 +1,7 @@
 import heroimg from "../../../public/Heroimg.png";
 const Banner = () => {
   return (
-    <div className='hero py-20 px-28 bg-base-200 mt-14 rounded-3xl'>
+    <div className='hero py-20 px-28 bg-base-200 mt-14 mb-24 rounded-3xl'>
       <div className='hero-content flex-col lg:flex-row-reverse lg:gap-20'>
         <img src={heroimg} className='max-w-sm rounded-lg shadow-2xl' />
         <div>
