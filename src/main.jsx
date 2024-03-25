@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Components/Root/Root";
 import Home from "./Components/Home/Home";
 import Error from "./Components/Error/Error";
+import BookDetails from "./Components/BookDetails/BookDetails";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("../books.json"),
       },
       {
         path: "/listedbooks",
@@ -34,6 +34,11 @@ const router = createBrowserRouter([
             <h1 className='text-5xl text-center'>This is pages to read.</h1>
           </div>
         ),
+      },
+      {
+        path: "/book/:bookId",
+        element: <BookDetails></BookDetails>,
+        // loader: () => fetch("../books.json"),
       },
     ],
   },
