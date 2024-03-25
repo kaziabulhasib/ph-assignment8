@@ -4,8 +4,10 @@ import Header from "../Header/Header";
 const Root = () => {
   return (
     <div>
-      <Header></Header>
-      <Outlet></Outlet>
+      <div className='max-w-7xl mx-auto py-14'>
+        <Header></Header>
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 };

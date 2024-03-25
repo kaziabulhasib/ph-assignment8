@@ -6,11 +6,13 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Components/Root/Root";
 import Home from "./Components/Home/Home";
+import Error from "./Components/Error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
         element: (
           <div>
             <h1 className='text-5xl text-center'>This is listed books.</h1>
+          </div>
+        ),
+      },
+      {
+        path: "/pagesread",
+        element: (
+          <div>
+            <h1 className='text-5xl text-center'>This is pages to read.</h1>
           </div>
         ),
       },

@@ -1,6 +1,23 @@
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
+  const links = (
+    <>
+      <div className='nav-font flex gap-4 text-[18px] text-[#131313CC]'>
+        <li>
+          <NavLink to='/'>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to='/listedbooks'>Listed Books</NavLink>
+        </li>
+        <li>
+          <NavLink to='/pagesread'>Pages to Read</NavLink>
+        </li>
+      </div>
+    </>
+  );
   return (
-    <div className='navbar bg-base-100'>
+    <div className='navbar bg-base-100 nav-font'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -21,52 +38,21 @@ const Header = () => {
           <ul
             tabIndex={0}
             className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'>
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Parent</a>
-              <ul className='p-2'>
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            {links}
           </ul>
         </div>
-        <a className='btn btn-ghost text-xl'>daisyUI</a>
+        <a className='btn btn-ghost text-3xl font-bold'>Book Vibe</a>
       </div>
-      <div className='navbar-center hidden lg:flex'>
-        <ul className='menu menu-horizontal px-1'>
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className='p-2'>
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+      <div className='navbar-center  hidden lg:flex'>
+        <ul className='menu menu-horizontal px-1'>{links}</ul>
       </div>
       <div className='navbar-end'>
-        <a className='btn'>Button</a>
+        <button className='  px-7 py-4 bg-[#23BE0A] text-white font-semibold text-[18px] mr-4 rounded-lg'>
+          Sign In
+        </button>
+        <button className='  px-7 py-4 bg-[#59C6D2] text-white font-semibold text-[18px] mr-4 rounded-lg'>
+          Sign In
+        </button>
       </div>
     </div>
   );
