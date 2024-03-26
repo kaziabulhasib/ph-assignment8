@@ -1,11 +1,27 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveReadBookToLocalStorage } from "../../utility/localStorage";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const BookDetails = () => {
   const books = useLoaderData();
   const { bookId } = useParams();
   const bookIdInt = parseInt(bookId);
   const book = books.find((book) => book.bookId === bookIdInt);
-  console.log(book);
+  // console.log(book);
+
+  // Handle onclick read button
+
+  const handleRead = () => {
+    saveReadBookToLocalStorage(book, toast);
+  };
+
+  // Handle onclick wishlist button
+
+  const handleWishlist = () => {
+    // toast.error("You have already read this book.");
+  };
 
   return (
     <div className='flex justify-between py-14 gap-12 items-center'>
@@ -51,13 +67,19 @@ const BookDetails = () => {
         </div>
         {/* button div  */}
         <div className='flex gap-4'>
-          <button className=' nav-font  px-7 py-4 border text-black font-semibold text-[18px] mr-4 rounded-lg mt-16'>
+          <button
+            onClick={handleRead}
+            className=' nav-font  px-7 py-4 border text-black font-semibold text-[18px] mr-4 rounded-lg mt-16'>
             Read
           </button>
-          <button className=' nav-font  px-7 py-4 bg-[#50B1C9] text-white font-semibold text-[18px] mr-4 rounded-lg mt-16'>
+
+          <button
+            onClick={handleWishlist}
+            className=' nav-font  px-7 py-4 bg-[#50B1C9] text-white font-semibold text-[18px] mr-4 rounded-lg mt-16'>
             Wishlist
           </button>
         </div>
+        <ToastContainer />
       </div>
     </div>
   );
