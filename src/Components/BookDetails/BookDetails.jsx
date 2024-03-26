@@ -5,7 +5,7 @@ const BookDetails = () => {
   const { bookId } = useParams();
   const bookIdInt = parseInt(bookId);
   const book = books.find((book) => book.bookId === bookIdInt);
-  // console.log(book);
+  console.log(book);
 
   return (
     <div className='flex justify-between py-14 gap-12 items-center'>
