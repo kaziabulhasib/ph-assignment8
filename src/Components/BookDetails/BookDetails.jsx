@@ -1,5 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveReadBookToLocalStorage } from "../../utility/localStorage";
+import {
+  saveReadBookToLocalStorage,
+  saveWishListToLocalStorage,
+} from "../../utility/localStorage";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -20,7 +23,8 @@ const BookDetails = () => {
   // Handle onclick wishlist button
 
   const handleWishlist = () => {
-    // toast.error("You have already read this book.");
+    console.log("wi");
+    saveWishListToLocalStorage(book, toast);
   };
 
   return (
