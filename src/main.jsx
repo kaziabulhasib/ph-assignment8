@@ -8,6 +8,7 @@ import Root from "./Components/Root/Root";
 import Home from "./Components/Home/Home";
 import Error from "./Components/Error/Error";
 import BookDetails from "./Components/BookDetails/BookDetails";
+import ReadList from "./Components/ReadList/ReadList";
 
 const router = createBrowserRouter([
   {
@@ -19,11 +20,12 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
+      // Route experiment
       {
         path: "/listedbooks",
         element: (
           <div>
-            <h1 className='text-5xl text-center'>This is listed books.</h1>
+            <ReadList></ReadList>
           </div>
         ),
       },

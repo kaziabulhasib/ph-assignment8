@@ -1,6 +1,19 @@
 import { Link } from "react-router-dom";
 import heroimg from "../../../public/Heroimg.png";
-const Banner = () => {
+const Banner = (book) => {
+  const {
+    image,
+    bookName,
+    author,
+    bookId,
+    rating,
+    category,
+    tags,
+    review,
+    totalPages,
+    publisher,
+    yearOfPublishing,
+  } = book;
   return (
     <div className='hero py-20 px-28 bg-base-200 mt-14 mb-24 rounded-3xl'>
       <div className='hero-content flex-col lg:flex-row-reverse lg:gap-20'>
