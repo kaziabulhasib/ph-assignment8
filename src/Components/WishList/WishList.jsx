@@ -7,10 +7,10 @@ const WishList = () => {
     const getWishList = JSON.parse(localStorage.getItem("wish-list")) || [];
     setWishList(getWishList);
   }, []);
-  console.log(wishList);
+  // console.log(wishList);
   return (
     <div>
-      <h1 className='text-3xl text-center'>wishlist</h1>
+      {/* <h1 className='text-3xl text-center'>wishlist</h1> */}
       <div>
         {wishList.map((bk, index) => (
           <div key={index}>

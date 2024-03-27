@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 
 const ReadList = () => {
+  // const { bookId } = book;
+
   const [ReadList, setReadList] = useState([]);
 
   useEffect(() => {
     const getReadList = JSON.parse(localStorage.getItem("read-book")) || [];
     setReadList(getReadList);
   }, []);
-  console.log(ReadList);
+
   return (
     <div>
-      <h1 className='text-5xl text-center'>ReadList</h1>
-
       <div>
         {ReadList.map((bk, index) => (
           <div key={index}>
@@ -51,6 +51,11 @@ const ReadList = () => {
                     <h1 className='py-3 px-5 bg-green-200 text-black rounded-3xl'>
                       rating: {bk.rating}
                     </h1>
+                    {/* <Link to={`/book/${bookId}`}>
+                      <button className='py-3 px-5 bg-green-500 text-white rounded-3xl font-bold'>
+                        View Details
+                      </button>
+                    </Link> */}
                     <button className='py-3 px-5 bg-green-500 text-white rounded-3xl font-bold'>
                       View Details
                     </button>

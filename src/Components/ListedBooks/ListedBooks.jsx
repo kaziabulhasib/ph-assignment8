@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+import Dropdown from "../Dropdown/Dropdown";
 
 const ListedBooks = () => {
   const [tabindex, setTabindex] = useState(0);
-  console.log(tabindex);
+  // console.log(tabindex);
   return (
     <div>
       <div className='p-4 bg-[#1313130D] my-9 rounded-lg'>
@@ -11,7 +12,10 @@ const ListedBooks = () => {
           Listed Books
         </h1>
       </div>
-
+      {/* dropdown list */}
+      <div className='text-center mb-14'>
+        <Dropdown></Dropdown>
+      </div>
       {/* this is tab section created using mamba ui  */}
 
       <div className='flex items-center -mx-4 overflow-x-auto overflow-y-hidden  flex-nowrap dark:bg-gray-100 dark:text-gray-800'>
