@@ -1,19 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
-const ReadList = () => {
-  const [ReadList, setReadList] = useState([]);
+const WishList = () => {
+  const [wishList, setWishList] = useState([]);
 
   useEffect(() => {
-    const getReadList = JSON.parse(localStorage.getItem("read-book")) || [];
-    setReadList(getReadList);
+    const getWishList = JSON.parse(localStorage.getItem("wish-list")) || [];
+    setWishList(getWishList);
   }, []);
-  console.log(ReadList);
+  console.log(wishList);
   return (
     <div>
-      <h1 className='text-5xl text-center'>ReadList</h1>
-
+      <h1 className='text-3xl text-center'>wishlist</h1>
       <div>
-        {ReadList.map((bk, index) => (
+        {wishList.map((bk, index) => (
           <div key={index}>
             <div className='hero border rounded-2xl my-6 '>
               <div className='hero-content gap-8 justify-around flex-col lg:flex-row '>
@@ -65,4 +64,4 @@ const ReadList = () => {
   );
 };
 
-export default ReadList;
+export default WishList;

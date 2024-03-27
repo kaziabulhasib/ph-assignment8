@@ -32,7 +32,7 @@ const BookDetails = () => {
       <div className='p-16 bg-[#1313130D] rounded-2xl flex-1'>
         <img className='w-[425px] h-[565px]' src={book.image} alt='' />
       </div>
-      <div className='flex-1'>
+      <div className='flex-1 space-y-8'>
         <h1 className='text-5xl'>{book.bookName}</h1>
         <p>by : {book.author}</p>
         <p> {book.category}</p>
@@ -57,16 +57,16 @@ const BookDetails = () => {
             <h2 className='nav-font font-semibold'>{book.totalPages}</h2>
           </div>
           <div className='flex gap-10 mb-3'>
-            <h1 className='nav-font text-[#131313B2]'>Number of pages: </h1>
-            <h2 className='nav-font font-semibold'>{book.totalPages}</h2>
+            <h1 className='nav-font text-[#131313B2]'>Publisher: </h1>
+            <h2 className='nav-font font-semibold'>{book.publisher}</h2>
           </div>
           <div className='flex gap-10 mb-3'>
-            <h1 className='nav-font text-[#131313B2]'>Number of pages: </h1>
-            <h2 className='nav-font font-semibold'>{book.totalPages}</h2>
+            <h1 className='nav-font text-[#131313B2]'>Year of Publishing: </h1>
+            <h2 className='nav-font font-semibold'>{book.yearOfPublishing}</h2>
           </div>
           <div className='flex gap-10 mb-3'>
-            <h1 className='nav-font text-[#131313B2]'>Number of pages: </h1>
-            <h2 className='nav-font font-semibold'>{book.totalPages}</h2>
+            <h1 className='nav-font text-[#131313B2]'>Rating: </h1>
+            <h2 className='nav-font font-semibold'>{book.rating}</h2>
           </div>
         </div>
         {/* button div  */}
