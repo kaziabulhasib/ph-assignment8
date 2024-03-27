@@ -11,6 +11,7 @@ import BookDetails from "./Components/BookDetails/BookDetails";
 
 import ListedBooks from "./Components/ListedBooks/ListedBooks";
 import ReadList from "./Components/ReadList/ReadList";
+
 import WishList from "./Components/WishList/WishList";
 
 const router = createBrowserRouter([
@@ -29,10 +30,19 @@ const router = createBrowserRouter([
         element: (
           <div>
             <ListedBooks></ListedBooks>
-            <ReadList></ReadList>
-            <WishList></WishList>
           </div>
         ),
+        children: [
+          {
+            index: true,
+            element: <ReadList></ReadList>,
+          },
+          {
+            path: "wishlist",
+
+            element: <WishList></WishList>,
+          },
+        ],
       },
       {
         path: "/pagesread",
