@@ -5,7 +5,7 @@ const Dropdown = () => {
     border: "none",
     borderRadius: "4px",
     textAlign: "center",
-    padding: "12px 16px",
+    padding: "12px 18px",
   };
   const sortBook = (e) => {
     console.log(e.target.value);
