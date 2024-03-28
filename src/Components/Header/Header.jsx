@@ -13,6 +13,13 @@ const Header = () => {
         <li>
           <NavLink to='/pagesread'>Pages to Read</NavLink>
         </li>
+        {/* extra route  */}
+        <li>
+          <NavLink to='/about'>About Us</NavLink>
+        </li>
+        <li>
+          <NavLink to='/contact'>Contact Us</NavLink>
+        </li>
       </div>
     </>
   );

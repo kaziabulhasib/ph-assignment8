@@ -14,6 +14,8 @@ import ReadList from "./Components/ReadList/ReadList";
 
 import WishList from "./Components/WishList/WishList";
 import CustomBarChartx from "./Components/CustomBarChartx/CustomBarChartx";
+import ContactForm from "./Components/ContactForm/ContactForm";
+import About from "./Components/About/About";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +55,15 @@ const router = createBrowserRouter([
         path: "/book/:bookId",
         element: <BookDetails></BookDetails>,
         loader: () => fetch("/books.json"),
+      },
+      // extra route
+      {
+        path: "/contact",
+        element: <ContactForm></ContactForm>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
       },
     ],
   },
