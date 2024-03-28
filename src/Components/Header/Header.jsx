@@ -1,28 +1,38 @@
 import { NavLink } from "react-router-dom";
+import "./header.css";
 
 const Header = () => {
   const links = (
     <>
       <div className='nav-font flex gap-4 text-[18px] text-[#131313CC]'>
-        <li>
-          <NavLink to='/'>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to='/listedbooks'>Listed Books</NavLink>
-        </li>
-        <li>
-          <NavLink to='/pagesread'>Pages to Read</NavLink>
-        </li>
+        <NavLink to='/' className='nav-link' activeClassName='active'>
+          Home
+        </NavLink>
+
+        <NavLink
+          to='/listedbooks'
+          className='nav-link'
+          activeClassName='active'>
+          Listed Books
+        </NavLink>
+
+        <NavLink to='/pagesread' className='nav-link' activeClassName='active'>
+          Pages to Read
+        </NavLink>
+
         {/* extra route  */}
-        <li>
-          <NavLink to='/about'>About Us</NavLink>
-        </li>
-        <li>
-          <NavLink to='/contact'>Contact Us</NavLink>
-        </li>
+
+        <NavLink to='/about' className='nav-link' activeClassName='active'>
+          About Us
+        </NavLink>
+
+        <NavLink to='/contact' className='nav-link' activeClassName='active'>
+          Contact Us
+        </NavLink>
       </div>
     </>
   );
+
   return (
     <div className='navbar bg-base-100 nav-font'>
       <div className='navbar-start'>
@@ -54,10 +64,10 @@ const Header = () => {
         <ul className='menu menu-horizontal px-1'>{links}</ul>
       </div>
       <div className='navbar-end'>
-        <button className='  px-7 py-4 bg-[#23BE0A] text-white font-semibold text-[18px] mr-4 rounded-lg'>
+        <button className='  px-6 py-4 bg-[#23BE0A] text-white font-semibold text-[18px] mr-4 rounded-lg'>
           Sign In
         </button>
-        <button className='  px-7 py-4 bg-[#59C6D2] text-white font-semibold text-[18px] mr-4 rounded-lg'>
+        <button className='  px-6 py-4 bg-[#59C6D2] text-white font-semibold text-[18px] mr-4 rounded-lg'>
           Sign In
         </button>
       </div>

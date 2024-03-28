@@ -10,3 +10,10 @@
 body {
   font-family: "Playfair Display", serif;
 }
+
+/* Custom styles for the active NavLink */
+.nav-link.active {
+  /* Add your custom styles here */
+  background-color: #4caf50; /* Green */
+  color: white;
+}

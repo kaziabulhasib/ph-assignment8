@@ -1,0 +1,28 @@
+.nav-link {
+  padding: 14px 20px;
+  color: rgb(64, 63, 63);
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  border: 1px solid #23be0a;
+  color: #23be0a;
+
+  background-color: white;
+
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: rgb(64, 63, 63);
+
+  background-color: rgba(155, 152, 152, 0.387);
+  border: 1px solid rgb(155, 152, 152);
+
+  border-radius: 8px;
+}
+
+/* .navbar-end button {
+  padding: 16px 24px;
+} */
