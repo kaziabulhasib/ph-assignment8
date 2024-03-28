@@ -21,7 +21,7 @@ const Book = ({ book }) => {
         <figure className='bg-[#F3F3F3] w-[320px] h-[230px] rounded-2xl mx-auto'>
           <img className='h-[165px]' src={image} alt='Shoes' />
         </figure>
-        <div className='flex gap-3 my-6'>
+        <div className='flex gap-3 my-6 '>
           {tags.map((tag, index) => (
             <p
               className='text-[#23BE0A] py-2 px-3 bg-[#23BE0A0D] text-[12px] nav-font rounded-3xl'
@@ -31,11 +31,11 @@ const Book = ({ book }) => {
           ))}
         </div>
 
-        <div className='card-body'>
-          <h2 className='card-title'>{bookName}</h2>
-          <p className='nav-font'>by: {author}</p>
+        <div className='card-body text-left -ml-4'>
+          <h2 className='card-title text-2xl font-bold'>{bookName}</h2>
+          <p className='nav-font font-medium'>by: {author}</p>
         </div>
-        <div className='flex justify-between'>
+        <div className='flex justify-between px-4 nav-font'>
           <p>{category}</p>
           <p className='flex gap-2 items-center'>
             {rating} <MdOutlineStarOutline />
