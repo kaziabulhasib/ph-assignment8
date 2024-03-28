@@ -7,7 +7,9 @@ const Dropdown = () => {
     textAlign: "center",
     padding: "12px 16px",
   };
-
+  const sortBook = (e) => {
+    console.log(e.target.value);
+  };
   const optionStyle = {
     backgroundColor: "white",
     color: "black",
@@ -17,7 +19,7 @@ const Dropdown = () => {
   };
   return (
     <div>
-      <select id='sort' name='sort' style={selectStyle}>
+      <select id='sort' name='sort' style={selectStyle} onChange={sortBook}>
         <option value='default' style={optionStyle}>
           Sort by
         </option>

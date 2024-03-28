@@ -23,7 +23,9 @@ const Book = ({ book }) => {
         </figure>
         <div className='flex gap-3 my-6'>
           {tags.map((tag, index) => (
-            <p className='text-[#23BE0A]' key={index}>
+            <p
+              className='text-[#23BE0A] py-2 px-3 bg-[#23BE0A0D] text-[12px] nav-font rounded-3xl'
+              key={index}>
               {tag}
             </p>
           ))}

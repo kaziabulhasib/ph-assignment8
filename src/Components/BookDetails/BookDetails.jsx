@@ -28,23 +28,25 @@ const BookDetails = () => {
   };
 
   return (
-    <div className='flex justify-between py-14 gap-12 items-center'>
+    <div className='flex  justify-between  py-14 gap-12 items-center'>
       <div className='p-16 bg-[#1313130D] rounded-2xl flex-1'>
         <img className='w-[425px] h-[565px]' src={book.image} alt='' />
       </div>
-      <div className='flex-1 space-y-8'>
-        <h1 className='text-5xl'>{book.bookName}</h1>
-        <p>by : {book.author}</p>
-        <p> {book.category}</p>
+      <div className='flex-1 text-left space-y-8'>
+        <h1 className='  text-4xl  font-bold'>{book.bookName}</h1>
+        <p className='nav-font font-medium'>by : {book.author}</p>
+        <p className='nav-font font-medium'> {book.category}</p>
         <p>
           {" "}
-          <span>Review: </span> {book.review}
+          <span className='font-bold'>Review: </span> {book.review}
         </p>
-        <div className='flex gap-4'>
-          <h1>Tag:</h1>
-          <div className='flex gap-3'>
+        <div className='flex items-center gap-4'>
+          <h1 className='nav-font font-medium'>Tag:</h1>
+          <div className='flex  gap-3'>
             {book.tags.map((tag, index) => (
-              <p className='text-[#23BE0A]' key={index}>
+              <p
+                className='text-[#23BE0A] py-2 px-4 bg-[#23BE0A0D] text-base font-medium nav-font rounded-3xl'
+                key={index}>
                 #{tag}
               </p>
             ))}
