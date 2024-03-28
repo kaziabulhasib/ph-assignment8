@@ -13,6 +13,8 @@ import ListedBooks from "./Components/ListedBooks/ListedBooks";
 import ReadList from "./Components/ReadList/ReadList";
 
 import WishList from "./Components/WishList/WishList";
+import CustomBarChartx from "./Components/CustomBarChartx/CustomBarChartx";
+// import BarChart from "./Components/BarChart/BarChart";
 
 const router = createBrowserRouter([
   {
@@ -46,11 +48,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/pagesread",
-        element: (
-          <div>
-            <h1 className='text-5xl text-center'>This is pages to read.</h1>
-          </div>
-        ),
+        element: <CustomBarChartx></CustomBarChartx>,
       },
       {
         path: "/book/:bookId",

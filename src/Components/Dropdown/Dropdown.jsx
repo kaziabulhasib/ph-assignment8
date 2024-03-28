@@ -11,7 +11,7 @@ const Dropdown = () => {
   const optionStyle = {
     backgroundColor: "white",
     color: "black",
-    border: "1px solid gray",
+
     padding: "6px 10px",
     textAlign: "center",
   };
