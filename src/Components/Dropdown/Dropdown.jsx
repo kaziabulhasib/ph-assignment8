@@ -3,9 +3,9 @@ const Dropdown = () => {
     backgroundColor: "green",
     color: "white",
     border: "none",
-    borderRadius: "4px",
+    borderRadius: "5px",
     textAlign: "center",
-    padding: "12px 18px",
+    padding: "12px 16px",
   };
   const sortBook = (e) => {
     console.log(e.target.value);
