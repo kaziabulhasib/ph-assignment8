@@ -35,7 +35,7 @@ const Book = ({ book }) => {
           <h2 className='card-title text-2xl font-bold'>{bookName}</h2>
           <p className='nav-font font-medium'>by: {author}</p>
         </div>
-        <div className='flex justify-between px-4 nav-font'>
+        <div className='flex justify-between font-medium px-4 nav-font'>
           <p>{category}</p>
           <p className='flex gap-2 items-center'>
             {rating} <MdOutlineStarOutline />

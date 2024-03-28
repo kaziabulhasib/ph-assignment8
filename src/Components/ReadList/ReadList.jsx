@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineContactPage } from "react-icons/md";
+import { MdPeopleAlt } from "react-icons/md";
 
 import { useEffect, useState } from "react";
 
@@ -25,27 +28,37 @@ const ReadList = () => {
                 </div>
                 <div className='space-y-4'>
                   <h1 className='text-2xl font-bold'>{bk.bookName}</h1>
-                  <p>by: {bk.author}</p>
-                  <div className='flex gap-8'>
-                    <div className='flex gap-3'>
+                  <p className='nav-font font-medium'>by: {bk.author}</p>
+                  <div className='flex items-center nav-font gap-8'>
+                    <div className='flex items-center nav-font gap-3'>
                       {" "}
                       <span>Tag: </span>
                       {bk.tags.map((tag, index) => (
-                        <p className='text-[#23BE0A]' key={index}>
+                        <p
+                          className='text-[#23BE0A] py-2 px-4 bg-[#23BE0A0D] text-base font-medium nav-font rounded-3xl'
+                          key={index}>
                           #{tag}
                         </p>
                       ))}
                     </div>
-                    <p className='flex'>
+                    <p className='flex items-center gap-2'>
+                      <IoLocationOutline />
                       Year of Publishing: {bk.yearOfPublishing}
                     </p>
                   </div>
-                  <div className='flex gap-4 border-b'>
-                    <h4 className='flex'>Publisher: {bk.publisher}</h4>
-                    <h4 className='flex'>Page: {bk.totalPages}</h4>
+                  <div className='flex gap-6 nav-font border-b pb-7'>
+                    <h4 className='flex items-center gap-2'>
+                      {" "}
+                      <MdPeopleAlt /> Publisher: {bk.publisher}
+                    </h4>
+                    <h4 className='flex items-center gap-2'>
+                      {" "}
+                      <MdOutlineContactPage />
+                      Page: {bk.totalPages}
+                    </h4>
                   </div>
-                  <div className='flex gap-5'>
-                    <h1 className='py-2 px-5 bg-green-200 text-black rounded-[30px]'>
+                  <div className='flex gap-5 nav-font'>
+                    <h1 className='py-3 px-5 bg-green-200 text-black rounded-3xl'>
                       Category: {bk.category}
                     </h1>
                     <h1 className='py-3 px-5 bg-green-200 text-black rounded-3xl'>
