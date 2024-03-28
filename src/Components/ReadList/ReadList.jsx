@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom";
+
 import { useEffect, useState } from "react";
 
 const ReadList = () => {
-  // const { bookId } = book;
-
   const [ReadList, setReadList] = useState([]);
 
   useEffect(() => {
@@ -51,14 +51,11 @@ const ReadList = () => {
                     <h1 className='py-3 px-5 bg-green-200 text-black rounded-3xl'>
                       rating: {bk.rating}
                     </h1>
-                    {/* <Link to={`/book/${bookId}`}>
+                    <Link to={`/book/${bk.bookId}`}>
                       <button className='py-3 px-5 bg-green-500 text-white rounded-3xl font-bold'>
                         View Details
                       </button>
-                    </Link> */}
-                    <button className='py-3 px-5 bg-green-500 text-white rounded-3xl font-bold'>
-                      View Details
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

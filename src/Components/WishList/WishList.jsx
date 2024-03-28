@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const WishList = () => {
   const [wishList, setWishList] = useState([]);
@@ -49,9 +50,12 @@ const WishList = () => {
                     <h1 className='py-3 px-5 bg-green-200 text-black rounded-3xl'>
                       rating: {bk.rating}
                     </h1>
-                    <button className='py-3 px-5 bg-green-500 text-white rounded-3xl font-bold'>
-                      View Details
-                    </button>
+
+                    <Link to={`/book/${bk.bookId}`}>
+                      <button className='py-3 px-5 bg-green-500 text-white rounded-3xl font-bold'>
+                        View Details
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

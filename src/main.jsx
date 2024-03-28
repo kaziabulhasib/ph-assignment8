@@ -14,7 +14,6 @@ import ReadList from "./Components/ReadList/ReadList";
 
 import WishList from "./Components/WishList/WishList";
 import CustomBarChartx from "./Components/CustomBarChartx/CustomBarChartx";
-// import BarChart from "./Components/BarChart/BarChart";
 
 const router = createBrowserRouter([
   {
