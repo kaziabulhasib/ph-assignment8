@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className='bg-gray-100 my-24'>
-      <div className='bg-blue-500 py-20 text-center text-white'>
+      <div className='bg-green-500 py-20 text-center text-white'>
         <h1 className='text-4xl font-bold mb-4'>About Us</h1>
         <p className='text-lg'>Welcome to our book review website!</p>
       </div>
